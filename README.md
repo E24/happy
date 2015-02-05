@@ -1,1 +1,1 @@
-Happy ads
+Load your ads happy
