@@ -1,0 +1,19 @@
+{
+  "name": "happy",
+  "version": "0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp-uglify": "~1.1.0",
+    "gulp": "~3.8.10",
+    "gulp-jshint": "~1.9.2",
+    "browserify": "~8.1.3",
+    "vinyl-source-stream": "~1.0.0",
+    "vinyl-buffer": "~1.0.0"
+  }
+}
