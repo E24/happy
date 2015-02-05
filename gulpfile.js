@@ -1,4 +1,5 @@
 var gulp = require('./gulp')([
+    'uglify',
     'browserify',
     'js-hint'
 ]);

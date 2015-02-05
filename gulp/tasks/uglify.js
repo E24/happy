@@ -5,6 +5,5 @@ module.exports = function() {
     gulp.task('uglify', function() {
       gulp.src('./lib/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./dist'))
     });
 };
