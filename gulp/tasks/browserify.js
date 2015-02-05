@@ -13,7 +13,7 @@ var getBundleName = function () {
 
 module.exports = function() {
     var bundler = browserify({
-        entries: ['./lib/'+ getBundleName() +'.js'],
+        entries: ['./lib/index.js'],
         debug: true
     });
 
