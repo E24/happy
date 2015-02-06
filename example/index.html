@@ -15,22 +15,104 @@
         </style>
     </head>
     <body>
-        <div id="5254943"></div>
-        <div id="5254907"></div>
-        <div id="5254914"></div>
-        <div id="5254916"></div>
-        <div id="5254913"></div>
-        <div id="5254915"></div>
-        <div id="5254937"></div>
-        <div id="5254940"></div>
-        <div id="5254936"></div>
-        <div id="5254939"></div>
-        <div id="5254933"></div>
-        <div id="5254938"></div>
-        <div id="5254941"></div>
-        <div id="5254935"></div>
-        <div id="5278649"></div>
-
-        <script type="text/javascript" src="../dist/happy-0.0.1.min.js" async></script>
+        <div id="ad-top"></div>
+        <div id="ad-bottom"></div>
+        <div id="ad-button1"></div>
+        <div id="ad-button2"></div>
+        <div id="ad-button3"></div>
+        <div id="ad-button4"></div>
+        <div id="ad-bilag1"></div>
+        <div id="ad-bilag2"></div>
+        <div id="ad-left1"></div>
+        <div id="ad-left2"></div>
+        <div id="ad-netboard"></div>
+        <div id="ad-overlay"></div>
+        <div id="ad-topleft"></div>
+        <div id="ad-topright"></div>
+        <div id="ad-right"></div>
+        <div id="ad-proffknapp"></div>
+        <div id="ad-superboard"></div>
+        <div id="ad-wallpaper"></div>
+        <script type="text/javascript" src="../dist/happy-0.0.1.min.js"></script>
+        <script>
+            var ads = new happy({
+                emptySelector: 'blank_pix_house.gif',
+                placements: [
+                    {
+                        id: 5254943,
+                        name: 'top',
+                        container: document.getElementById('ad-top')
+                    },
+                    {
+                        id: 5254907,
+                        name: 'bottom'
+                    },
+                    {
+                        id: 5254914,
+                        name: 'button1'
+                    },
+                    {
+                        id: 5254916,
+                        name: 'button2'
+                    },
+                    {
+                        id: 5254913,
+                        name: 'button3'
+                    },
+                    {
+                        id: 5254915,
+                        name: 'button4'
+                    },
+                    {
+                        id: 5254937,
+                        name: 'bilag1'
+                    },
+                    {
+                        id: 5254940,
+                        name: 'bilag2'
+                    },
+                    {
+                        id: 5254936,
+                        name: 'left1'
+                    },
+                    {
+                        id: 5254939,
+                        name: 'left2'
+                    },
+                    {
+                        id: 5254933,
+                        name: 'netboard'
+                    },
+                    {
+                        id: 5254938,
+                        name: 'overlay'
+                    },
+                    {
+                        id: 5254934,
+                        name: 'topleft'
+                    },
+                    {
+                        id: 5254941,
+                        name: 'topright'
+                    },
+                    {
+                        id: 5254935,
+                        name: 'right'
+                    },
+                    {
+                        id: 5278649,
+                        name: 'proffknapp'
+                    },
+                    {
+                        id: 5550918,
+                        name: 'superboard'
+                    },
+                    {
+                        id: 5254942,
+                        name: 'wallpaper'
+                    }]
+            });
+            ads.init();
+        </script>
     </body>
 </html>
