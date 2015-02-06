@@ -37,26 +37,80 @@
         <script>
             var ads = new happy({
                 emptySelector: 'blank_pix_house.gif',
-                placements: {
-                    'top': 5254943,
-                    'bottom': 5254907,
-                    'button1': 5254914,
-                    'button2': 5254916,
-                    'button3': 5254913,
-                    'button4': 5254915,
-                    'bilag1': 5254937,
-                    'bilag2': 5254940,
-                    'left1': 5254936,
-                    'left2': 5254939,
-                    'netboard': 5254933,
-                    'overlay': 5254938,
-                    'topleft': 5254934,
-                    'topright': 5254941,
-                    'right': 5254935,
-                    'proffknapp': 5278649,
-                    'superboard': 5550918,
-                    'wallpaper': 5254942
-                }
+                placements: [
+                    {
+                        id: 5254943,
+                        name: 'top',
+                        container: document.getElementById('ad-top')
+                    },
+                    {
+                        id: 5254907,
+                        name: 'bottom'
+                    },
+                    {
+                        id: 5254914,
+                        name: 'button1'
+                    },
+                    {
+                        id: 5254916,
+                        name: 'button2'
+                    },
+                    {
+                        id: 5254913,
+                        name: 'button3'
+                    },
+                    {
+                        id: 5254915,
+                        name: 'button4'
+                    },
+                    {
+                        id: 5254937,
+                        name: 'bilag1'
+                    },
+                    {
+                        id: 5254940,
+                        name: 'bilag2'
+                    },
+                    {
+                        id: 5254936,
+                        name: 'left1'
+                    },
+                    {
+                        id: 5254939,
+                        name: 'left2'
+                    },
+                    {
+                        id: 5254933,
+                        name: 'netboard'
+                    },
+                    {
+                        id: 5254938,
+                        name: 'overlay'
+                    },
+                    {
+                        id: 5254934,
+                        name: 'topleft'
+                    },
+                    {
+                        id: 5254941,
+                        name: 'topright'
+                    },
+                    {
+                        id: 5254935,
+                        name: 'right'
+                    },
+                    {
+                        id: 5278649,
+                        name: 'proffknapp'
+                    },
+                    {
+                        id: 5550918,
+                        name: 'superboard'
+                    },
+                    {
+                        id: 5254942,
+                        name: 'wallpaper'
+                    }]
             });
             ads.init();
         </script>
