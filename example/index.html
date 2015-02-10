@@ -110,7 +110,10 @@
                     name: 'wallpaper'
                 }] 
             });
-            ads.init();
+            ads.load();
+            setInterval(function() {
+                ads.load(['top']);
+            }, 5000);
         </script>
     </body>
 </html>
