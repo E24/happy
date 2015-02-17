@@ -1,0 +1,30 @@
+{
+  "name": "happy",
+  "version": "0.0.1",
+  "homepage": "https://github.com/e24/happy",
+  "authors": [
+    "Sindre Gulseth",
+    "Mads Erik Forberg"
+  ],
+  "description": "Load your ads happy",
+  "main": "dist/happy-0.0.1.min.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "ad",
+    "loading",
+    "fast",
+    "supah"
+  ],
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
