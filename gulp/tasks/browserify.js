@@ -13,7 +13,7 @@ var getBundleName = function () {
 
 module.exports = function() {
     var bundler = browserify({
-        entries: ['./lib/index.js'],
+        entries: ['./lib/index.js', './lib/async'],
         debug: true
     });
 
@@ -21,6 +21,6 @@ module.exports = function() {
         .bundle()
         .pipe(source(getBundleName() + '.min.js'))
         .pipe(buffer())
-        .pipe(uglify())
+//        .pipe(uglify())
         .pipe(gulp.dest('./dist/'));
 }
