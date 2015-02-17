@@ -21,6 +21,6 @@ module.exports = function() {
         .bundle()
         .pipe(source(getBundleName() + '.min.js'))
         .pipe(buffer())
-//        .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/'));
 }
