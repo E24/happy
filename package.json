@@ -19,6 +19,7 @@
     "gulp-watch": "~4.1.1",
     "mochify": "~2.4.0",
     "chai": "~2.0.0",
-    "chai-spies": "~0.5.1"
+    "chai-spies": "~0.5.1",
+    "sinon": "~1.12.2"
   }
 }
