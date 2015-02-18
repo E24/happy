@@ -12,7 +12,7 @@ chai.use(spies);
 var dummyResponse = {
     ADTECH_MultiAd: [
         {
-            PlacementId: "1234",
+            PlacementId: 1234,
             AdId: "11326954",
             Alias: "",
             Ad: {
@@ -95,11 +95,10 @@ describe('Ad Loader', function() {
 
     it('should be able to render iframe', function() {
         server = sinon.fakeServer.create();
-        server.autoRespond = true;
         server.respondWith(JSON.stringify(dummyResponse));
 
         var placement = document.createElement('div');
-        placement.id = 'ad-super';
+        placement.setAttribute('id', 'ad-super');
         document.body.appendChild(placement);
 
         loader = new AdLoader();
@@ -108,7 +107,8 @@ describe('Ad Loader', function() {
             id: 1234,
             name: 'super'
         });
-        
+        server.respond();
+
         server.restore();
     });
 });
