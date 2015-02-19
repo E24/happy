@@ -17,6 +17,7 @@
     "vinyl-source-stream": "~1.0.0",
     "vinyl-buffer": "~1.0.0",
     "gulp-watch": "~4.1.1",
+    "gulp-insert": "0.4.0",
     "mochify": "~2.4.0",
     "chai": "~2.0.0",
     "chai-spies": "~0.5.1",

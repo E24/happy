@@ -3,6 +3,7 @@ var browserify = require('browserify'),
     glob = require('glob'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
+    insert = require('gulp-insert'),
     uglify = require('gulp-uglify');
 
 var getBundleName = function () {
@@ -21,6 +22,7 @@ module.exports = function() {
         .bundle()
         .pipe(source(getBundleName() + '.min.js'))
         .pipe(buffer())
+        .pipe(insert.wrap(';(function(window) { var document=window.document; \n', '\n})(this);'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/'));
 }
