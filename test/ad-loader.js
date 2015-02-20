@@ -51,14 +51,16 @@ describe('Ad Loader', function() {
                 }
             ]
         });
+        sinon.stub(loader, 'getRequest');
 
         loader.load();
 
-        assert.equal(1, requests.length);
+        sinon.assert.calledOnce(loader.getRequest);
     });
 
     it('should be able to load individual placements with one request for each placement', function() {
         loader = new AdLoader();
+        sinon.stub(loader, 'getRequest');
 
         loader.load({
             id: 1337,
@@ -68,12 +70,13 @@ describe('Ad Loader', function() {
             id: 86400,
             name: 'day'
         });
-
-        assert.equal(2, requests.length);
+        
+        sinon.assert.calledTwice(loader.getRequest);
     });
 
     it('should be able to load placements provided in array', function() {
         loader = new AdLoader();
+        sinon.stub(loader, 'getRequest');
 
         loader.load([
             {
@@ -90,7 +93,7 @@ describe('Ad Loader', function() {
             }
         ]);
 
-        assert.equal(1, requests.length);
+        sinon.assert.calledOnce(loader.getRequest);
     });
 
     it('should be able to render iframe', function() {
